@@ -70,7 +70,8 @@ public class multiple_tree {
 	private static TreeNode  root = new TreeNode(1);
 
 	public static void main(String[] args) {
-		multiple_tree tree = new multiple_tree();
+		multiple_tree tree = new multiple_tree();//在添加节点的时候 可以判断一个节点的第一个孩子节点是否为空
+		                                                     										//为空的话 就new 一个 不添加孩子的链表节点里面 其他的孩子添加到孩子链表里面
 		tree.add(9, 15);
 		tree.add(6, 15);
 		tree.add(5, 9);
