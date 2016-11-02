@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Prim {
-
+    //prim 和城市间最短距离 是求一条连通的路径 
 	private boolean[] vistied=new boolean[100];
 	private static	int[] dist=new int[100];
 	private static  int[] per=new int[100];

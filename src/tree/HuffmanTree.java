@@ -134,9 +134,9 @@ public class HuffmanTree {
 		while (forest.size() > 1) {
 			tree.CreateHuffman();
 		}
-		// tree.seqOrder(root);
+		 tree.seqOrder(root);
 		tree.HuffmanCode();
-		tree.compress();
+		//tree.compress();
 	}
 
 	public void CreateHuffman() {
@@ -192,7 +192,8 @@ public class HuffmanTree {
 	}
 
 	public void HuffmanCode() {
-		List<HuffNode> list = tree.getHufflist();
+		List<HuffNode> list = tree.getHufflist();//不是对所有的都编码 对需要的编码
+		System.out.println(list.size()+"=============================");
 		String code = "";
 		for (int i = 0; i < list.size(); i++) {
 			HuffNode node = list.get(i);
